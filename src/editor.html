@@ -1,0 +1,53 @@
+<style>
+  main {
+    grid-template-columns: 85px 1fr 300px;
+  }
+  #canvasContainer1{
+    max-width: calc(100vw - 85px - 300px);
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+  }
+</style>
+
+<div class="tools">
+  <div class="tool" data-type="wall" title="wall">
+    <i class="fas fa-pen-nib"></i>
+  </div>
+  <div class="tool" data-type="checkpoint" title="checkpoint">
+    <i class="fas fa-flag"></i>
+  </div>
+  <div class="tool" data-type="finish" title="finish line">
+    <i class="fas fa-flag-checkered"></i>
+  </div>
+  <div class="tool" data-type="car" title="car">
+    <i class="fas fa-car"></i>
+  </div>
+  <div class="tool" data-type="width" title="width">
+    <span>Width</span>
+    <input type="number" name="width" id="width" value="500" />
+  </div>
+  <div class="tool" data-type="height" title="height">
+    <span>Height</span>
+    <input type="number" name="height" id="height" value="400" />
+  </div>
+  <div class="tool" data-type="name" title="name">
+    <span>Name</span>
+    <input type="text" name="levelName" id="levelName" value="something"/>
+  </div>
+  <div class="tool" data-type="save" title="save">
+    <i class="fas fa-save"></i>
+  </div>
+  <input type="file" name="import" id="import" hidden />
+  <label for="import">
+    <div class="tool" data-type="import" title="import">
+      <i class="fas fa-file-import"></i>
+    </div>
+  </label>
+  <div class="tool" data-type="export" title="export">
+    <i class="fas fa-file-export"></i>
+  </div>
+</div>
+
+<div id="canvasContainer1"></div>
+
+<div id="list" class="list"></div>

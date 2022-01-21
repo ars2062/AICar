@@ -1,0 +1,57 @@
+<style>
+  main {
+    grid-template-columns: 210px 1fr 1fr;
+    grid-template-rows: calc(100vh - 100px) 100vh;
+  }
+  .tools {
+    width: 200px !important;
+  }
+  .tools .tool {
+    width: 200px !important;
+  }
+  #canvasContainer {
+    grid-column: span 3;
+    max-width: 100% !important;
+    max-height: 100vh !important;
+  }
+</style>
+
+<div class="tools">
+    <div class="tool" data-type="import" title="Import Model">
+      <i class="fas fa-file-import"></i>
+    </div>
+  <div class="tool" data-type="render-track" title="Render Track">
+    <span>Render Track</span>
+    <input type="checkbox" name="render-track" id="render-track" checked />
+  </div>
+  <div class="tool" data-type="render-reward-gates" title="Render Checkpoints">
+    <span>Render Checkpoints</span>
+    <input
+      type="checkbox"
+      name="render-reward-gates"
+      id="render-reward-gates"
+      checked
+    />
+  </div>
+  <div class="tool" data-type="render-finish-line">
+    <span>Render Finish Line</span>
+    <input
+      type="checkbox"
+      name="render-finish-line"
+      id="render-finish-line"
+      checked
+    />
+  </div>
+  <div class="tool" data-type="render-car">
+    <span>Render Car</span>
+    <input type="checkbox" name="render-car" id="render-car" checked />
+  </div>
+  <div class="tool" data-type="render-rays">
+    <span>Render Rays</span>
+    <input type="checkbox" name="render-rays" id="render-rays" checked />
+  </div>
+</div>
+
+<div id="Levels" class="list"></div>
+<div id="Models" class="list"></div>
+<div id="canvasContainer3"></div>
