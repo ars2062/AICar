@@ -182,26 +182,8 @@ export class Car {
   }
 
   take_action(n) {
-    // if (this.forward) {
-    //   this.applyForce(this.head());
-    // }
-    // if (this.reverse) {
-    //   this.applyForce(this.head().mult(-1));
-    // }
-    // if (this.left) {
-    //   this.angle -= 0.1;
-    // }
-    // if (this.right) {
-    //   this.angle += 0.1;
-    // }
     this.applyForce(this.head());
     switch (n) {
-      // case 0:
-      //   this.applyForce(this.head());
-      //   break;
-      // case 1:
-      //   this.applyForce(this.head().mult(-1));
-      //   break;
       case 0:
         this.angle -= 0.1;
         break;
